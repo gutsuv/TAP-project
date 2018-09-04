@@ -1,6 +1,8 @@
 # TAP Project: Unknown Name
 
-##### Group Members:
+***
+
+### Group Members:
 * Makenna Stock
 * Rodney Brown
 * Viktor Gutsu
