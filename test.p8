@@ -11,7 +11,7 @@ player.moved_this_frame = false
 player.frame = 0
 player.step = 0
 player.steptwo = 0
-player.stepthree = 0
+player.stepthree = false
 
 player_up = 17
 player_down = 1
@@ -32,11 +32,21 @@ function move(sprite)
 	end
 	if(player.frame > 7) then
 		
-		if player.steptwo > 2 then
-			player.steptwo = 0
+		if player.steptwo == 3 then
+			player.stepthree = true
 		end
 		
-		player.steptwo += 1
+		if player.steptwo == 1 then
+			player.stepthree = false
+		end
+		
+		if player.stepthree == false then
+			player.steptwo += 1
+		end
+		
+		if player.stepthree == true then
+			player.steptwo -= 1
+		end
 		
 		if sprite == 49 then
 			player.sprite = array_left[player.steptwo]
@@ -53,11 +63,6 @@ function move(sprite)
 		if sprite == 1 then
 			player.sprite = array_down[player.steptwo]
 		end
-		
-		//player.sprite += 1
-		//if player.sprite > (sprite + 1) then
-		//	player.sprite = (sprite - 1)
-		//end
 
 		player.frame = 0
 	end
