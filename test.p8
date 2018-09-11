@@ -15,6 +15,9 @@ player.stepthree = false
 
 testcode = false
 
+
+testcode2 = false
+
 player_up = 17
 player_down = 1
 player_left = 49
