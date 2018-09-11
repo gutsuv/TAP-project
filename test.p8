@@ -13,6 +13,8 @@ player.step = 0
 player.steptwo = 0
 player.stepthree = false
 
+testcode = false
+
 player_up = 17
 player_down = 1
 player_left = 49
