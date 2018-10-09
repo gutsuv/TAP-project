@@ -81,10 +81,8 @@ function _init()
 	buttonred.y = 104
 	
 	player = {}
-	//player.x = 64
-	//player.y = 64
-	player.x = 850
-	player.y = 48
+	player.x = 64
+	player.y = 64
 	player.sprite = 1
 	player.speed = 1
 	player.moving = false
